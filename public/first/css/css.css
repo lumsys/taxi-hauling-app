@@ -1,0 +1,9 @@
+.menu-w .logo-w img {
+	width: 190px !important;
+}
+.profile-tile {
+	border-bottom: none !important;
+}
+.el-tablo:not(.centered) {
+	height: 125px !important;
+}

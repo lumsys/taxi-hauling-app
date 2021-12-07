@@ -162,7 +162,7 @@ class BranchController extends Controller
 
     public function branchTrips()
     {
-         $trips =  Trip::where(['business_code' => Auth::user()->unique_code, 'tripRequest' => 'approved'])->get();
+         $trips =  Trip::where(['business_code' => Auth::user()->unique_code, 'tripRequest' => 'approved'])->paginate(10);
           
          return view('business.branch.trips', compact('trips'));
     }
